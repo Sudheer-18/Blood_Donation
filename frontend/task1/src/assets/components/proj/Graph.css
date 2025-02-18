@@ -1,0 +1,528 @@
+.main {
+    height: fit-content !important;
+    width: 100%;
+    background-color: white;
+   
+}
+.Chart9_ma{
+    height: fit-content !important;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+.CountDetails {
+    margin-top: 10px;
+    height: fit-content !important;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+.graphs {
+    height: 450px;
+    width: 100%;
+    background-color: rgb(189, 189, 252);
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1{
+    height: 180px;
+    width: 180px;
+    background-color: red;
+}
+.box1 img{
+    background-size: 100% 100%;
+    height: 180px;
+    width: 180px;
+}
+.box2 {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donor-stat {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    width: 130px;
+}
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.donors-box {
+    background-color: white; 
+    color: red; 
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: black;
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.statistics-box {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    text-align: center;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.departmentGraph {
+    width: 100%;
+    margin-top: 20px ;
+    /* border: none ; */
+    /* Add any additional styling you need */
+}
+
+
+
+.kjhg_{
+    /* border: 1px solid green; */
+    height: fit-content;
+}
+
+.empty_{
+    margin-top: 30%;
+}
+
+.graphs_div {
+    width: 100% !important;
+    min-height: 600px; /* Set a minimum height */
+    border: 1px solid black !important;
+    display: flex;
+    align-items: flex-start; /* Keep items aligned at the top */
+    justify-content: space-evenly; /* Ensure elements are spaced out */
+    flex-wrap: wrap; /* Allow content to wrap */
+    margin-top: 20px;
+    overflow: auto; /* Scroll if content overflows */
+}
+
+.Bloodgroups {
+    width: fit-content !important;
+    height: 500px !important;
+    display: flex;
+    justify-content: space-evenly !important;
+    flex-direction: column;
+    margin-top: 0%;
+    /* border: 1px solid black; */
+    margin-right: 20px; /* Add some space between the divs */
+    position: relative;
+}
+
+
+._a1{
+    width: 100% ;
+    height: 60px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    /* border: 1px solid red; */
+   
+    /* margin-bottom: 10px; */
+    /* margin-top: 40px; */
+    background-image: url("./bgheading.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.collegegraph{
+    width:  700px !important;
+    height:fit-content !important;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
+    top: 0;
+    right: 10%; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+@media screen and (max-width : 700px){
+    .collegegraph{
+        width: 600px !important;
+    }
+}
+@media screen and (max-width : 600px){
+    .collegegraph{
+        width: 500px !important;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .collegegraph{
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .collegegraph{
+        width: 300px !important;
+    }
+}
+._1{
+    margin-top: 40px;
+    height: 50px !important;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('bgheading.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 60px;
+}
+
+.bg_div{
+    border: 1px solid black;
+    height: 500px;
+    margin-top: 140px;
+}
+
+
+._2{
+    margin-top: 10% !important;
+    /* width: fit-content !important; */
+}
+
+
+
+.z{
+    margin-top: 80px !important;
+    position: relative;
+    top: 0;
+    left: -38%;
+    width: 100% !important;
+    /* border-bottom: none !important; */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-image: url('bgheading.jpg');
+    background-size: 100% 100%;
+}
+.z1_{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.y {
+    position: relative;
+    width: 1200px !important; /* Make it full width */
+    height: 400px; /* Default height */
+    margin-top: 20px; /* Add some margin for spacing */
+    /* border: 1px solid red; */
+    left: -80%;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .y {
+        height: 350px; /* Adjust height for smaller screens */
+        /* left: -60%; Remove this unless absolutely needed */
+        width: 1100px !important;
+        left: -63% !important;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 1000px !important;
+        left: -23% !important;
+
+    }
+    ._1{
+        margin-top:80px ;
+    }
+}
+
+
+@media screen and (max-width: 1010px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 900px !important;
+        left: -15% !important;
+
+    }
+}
+
+
+@media screen and (max-width: 910px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 800px !important;
+        left: -8% !important;
+
+    }
+}
+
+
+@media screen and (max-width: 820px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 700px !important;
+        left: 0% !important;
+
+    }
+   
+}
+
+@media screen and (max-width: 705px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 600px !important;
+        left: 0% !important;
+
+    }
+    .z{
+        width: 500px !important;
+        left: 70px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 500px !important;
+        left: 0% !important;
+        
+
+    }
+    .z{
+        margin-top: 50px !important;
+        left: 20% !important;
+        font-size: 20px;
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 400px !important;
+        left: 10% !important;
+        
+
+    }
+    .z{
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 400px !important;
+        left: 0% !important;
+        
+
+    }
+    .z{
+        margin-top: 50px;
+        left: 15% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 402px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 300px !important;
+        left: -10% !important;
+        
+
+    }
+    .z{
+        left: 0% !important;
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .y {
+        height: 300px; /* Further adjust height */
+        width: 300px !important;
+        left: -3% !important;
+        
+
+    }
+    .z{
+        left: 0% !important;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .y {
+        height: 300px; /* Further adjust height */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .y {
+        height: 250px; /* Final height adjustment for very small screens */
+    }
+}
+
+@media screen and (max-width :1170px) {
+    .z{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .graph1 {
+    height: 100%;
+    width: 720px;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+/* .graph2{
+    height: 100%;
+    width: 720px;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .graphHead1 {
+    height: 50px; 
+    width: 400px; 
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+} */
+
+/* .graphHead1 img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+/* .graphHead1 span {
+    z-index: 1;
+    color: black;
+} */
+/* .div1{
+    height: 65%;
+    width: 90%;
+    background-color: orange;
+    margin-top: 10%;
+} */
+
+/* .div2{
+    height: fit-content;
+    width: 85%;
+    background-color: orange;
+    margin-top: 10%;
+} */
+
+
+/* .z{
+    margin-top: 30%;
+    width: 220%;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */

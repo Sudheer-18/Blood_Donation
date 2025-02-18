@@ -1,0 +1,84 @@
+/* General mobile menu styles */
+.mobile-menu {
+    display: none; /* Hide mobile menu by default on larger screens */
+    position: relative;
+    top: 0;
+    height: 5px;
+    padding-top: 0;
+    padding-right: 0px !important;
+    margin-right: 0 !important;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu-items {
+    display: none; /* Hide menu items */
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    /* text-align: center; */
+    transition: all 0.3s ease;
+    transform: translateY(-100%); /* Hide menu initially */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .menu-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-items ul li {
+    padding: 15px 0;
+  }
+  
+  .menu-items ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .menu-items.open {
+    display: block; /* Show menu items when in mobile view and toggled */
+    transform: translateY(0); /* Slide menu down smoothly when open */
+  }
+  
+  .desktop-nav, .desktop-auth {
+    display: flex; /* Show desktop nav and auth buttons on larger screens */
+  }
+  
+  .mobile-auth {
+    display: none; /* Hide auth buttons for mobile by default */
+  }
+  
+  /* Media Queries for Mobile View */
+  @media (max-width: 768px) {
+    .desktop-nav, .desktop-auth {
+      display: none; /* Hide desktop navigation and auth on mobile */
+    }
+  
+    .mobile-menu {
+      display: block; /* Show mobile menu on small screens */
+    }
+  
+    .mobile-auth {
+      display: block; /* Show mobile auth buttons */
+      margin-top: 10px;
+    }
+  
+    .menu-items {
+      display: none; /* Initially hide mobile menu items */
+    }
+  
+    .menu-items.open {
+      display: block; /* Show when toggled */
+    }
+  }
+  

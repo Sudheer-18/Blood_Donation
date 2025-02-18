@@ -1,0 +1,212 @@
+/* Main container adjustments */
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 650px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid red;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(124, 26, 26, 0.733);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
+/* Side 1 adjustments */
+.side1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack text and slider vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  background-color:#FE0000;
+  /* border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%; */
+  padding-top: 250px; /* Ensure there's some space for the text */
+  overflow: hidden; /* Prevents scrollbars on this side */
+}
+
+/* Styling for the text */
+.side1-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between text and slider */
+  text-align: center;
+}
+
+.side1 .slick-slider {
+  width: 80%;
+  height: 80%;
+}
+
+.side1 .slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+.side2 {
+  width: 50%;
+  height: 95%;
+  /* border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%; */
+}
+
+h3 {
+  position: relative;
+  top: 60px;
+  margin: 0; /* Remove default margin */
+}
+
+/* Cube container and animations */
+.cube {
+  width: 80px;  /* Cube width */
+  height: 80px; /* Cube height */
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear;
+  top: 28px;
+  /* left: 50px; */
+  margin: 0 auto; /* Center the cube */
+  z-index:1
+}
+
+/* Each face of the cube */
+.face {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid red;
+}
+
+/* Positioning the faces */
+.front { transform: rotateY(0deg) translateZ(40px); }
+.back { transform: rotateY(180deg) translateZ(40px); }
+.right { transform: rotateY(90deg) translateZ(40px); }
+.left { transform: rotateY(-90deg) translateZ(40px); }
+.top { transform: rotateX(90deg) translateZ(40px); }
+.bottom { transform: rotateX(-90deg) translateZ(40px); }
+
+/* 3D Rotation Animation */
+@keyframes rotateCube {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  50% { transform: rotateX(360deg) rotateY(180deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Styling for images */
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width:768px){
+  .center-container{
+    max-width: 768px;
+    height: 600px;
+  }
+}
+@media (width:640px){
+  .center-container{
+    width: 640px;
+    height: 360px;
+    border-radius: 0;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+}
+@media (width: 640px) {
+  .center-container {
+    width: 640px;
+    height: 360px;         /* Ensure this fits the viewport */
+    border-radius: 0;
+    padding-bottom: 0;     /* Adjust or remove extra padding */
+    overflow: hidden; 
+    padding-bottom: 180px;     /* Ensure no scrollbars appear */
+  }
+
+  .cube {
+    display: none;
+  }
+
+  h3, .center-text {
+    display: none;
+  }
+
+  .login-form,
+  .signup-form {
+    width: 100%;            /* Make form full width */
+    margin: 0 auto;         /* Center form content */
+    padding-top: 10px;      /* Add padding for spacing */
+    overflow: hidden;       /* Hide overflow within the form */
+  }
+
+  /* Disable scrolling if content overflows */
+  html, body {
+    overflow: hidden;       /* Disable scrollbars */
+    height: 100%;           /* Ensure full height is used */
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .center-container{
+    border-radius: 0;
+  }
+}
+@media (max-width:700px){
+  .center-container{
+    padding: 0;  /* Remove padding */
+    max-width: 425px;  
+    height: 618px;
+    }
+}
+@media (max-width:425px) {
+  .center-container{
+    padding: 0;  /* Remove padding */
+    max-width: 318px;  
+    height: 618px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    
+}
+}
+@media (width:280px) {
+  .center-container{
+    width: 260px;
+  }
+  
+}
+
+
+/* @media (max-width:240px){
+  .center-container{
+    padding: 0;  /* Remove padding */
+    /* max-width: 240px;  
+    height: 240px;
+    }
+} */ */
+
+/* Remove extra scrollbars globally */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling on the entire page */
+  height: 100%;
+}

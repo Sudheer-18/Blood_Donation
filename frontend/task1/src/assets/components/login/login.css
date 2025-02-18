@@ -1,0 +1,210 @@
+.auth-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  position: relative;
+  top: 70px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 20px;
+  border: 1px solid red;
+  box-sizing: border-box;
+
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.868);
+  /* border:  2px solid black; */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+button::before, button::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+button::before {
+  width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+button::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+button:hover::after {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.error-message {
+  color: black;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+span {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 320px), (max-width: 375px), (max-width:700px) {
+  .circle,
+  .smallc, .smallc1, .smallc2, .smallc3, .smallc4,
+  .vsmallc, .vsmallc1, .vsmallc2,
+  .smallc img, .smallc1 img, .smallc2 img, .smallc3 img, .smallc4 img,
+  .vsmallc img, .vsmallc1 img, .vsmallc2 img,
+  .side1 {
+    display: none;
+    padding: 5px;
+    max-width: 320px;
+    height: 621px;
+  }
+
+  .side2 {
+    width: 100%;
+    max-width: 350px;
+    max-height: 621px;
+  }
+
+  .login-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .auth-container {
+    max-height: 621px;
+    padding-bottom: 0;
+  }
+}
+
+/* Adjustments for 240px width and 320px height */
+@media (max-width: 240px) {
+  /* Hide unnecessary elements like cubes, circles, and any additional text */
+  .circle,
+  .smallc, .smallc1, .smallc2, .smallc3, .smallc4,
+  .vsmallc, .vsmallc1, .vsmallc2,
+  .cube,
+  .p,.h3, /* Assuming the paragraph text to hide */
+  .side1 {
+    display: none;
+  }
+  h3 {
+    display: none;
+  }
+
+  /* If <h3> has a class like 'center-text' */
+  .center-text {
+    display: none;
+  }
+  /* Set up the layout for the side container */
+  .side2 {
+    width: 100%;          /* Use full width */
+    max-width: 240px;      /* Restrict max width */
+    max-height: 320px;  
+    padding-bottom: 170px;   /* Restrict max height */
+  }
+  h2 {
+    text-align: center;
+    margin-top: 20px; /* Move the title down by 20px */
+     /* Reset the bottom property */
+  }
+
+  /* Style for the login and sign-up forms */
+  .login-form,
+  .signup-form {
+    width: 100%;           /* Make form full width */
+    margin: 0 auto;        /* Center form content */
+    padding: 5px;         /* Add padding for spacing */
+  }
+
+  .auth-container {
+    max-width: 240px;      /* Limit width to 240px */
+    max-height: 320px;     /* Limit height to 320px */
+    padding-bottom: 50px;     /* Remove padding to fit content */
+    overflow: hidden;      /* Prevent scrollbars */
+    box-sizing: border-box; /* Ensure padding doesn't increase size */
+  }
+
+  /* Additional adjustments for better display */
+  input, button {
+    width: 100%;           /* Make form inputs and buttons responsive */
+    margin-bottom: 0px;    /* Minimize margins for spacing */
+    padding: 5px; 
+       /* Add padding for touch interaction */
+  }
+
+  /* Remove potential scrollbars */
+  html, body {
+    overflow: hidden;      /* Ensure no scrollbars */
+    height: 100%;          /* Force content to fit in height */
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width:320px){
+  .side2{
+    padding-top: 10px;
+    
+  }
+  .cube{
+    display: none;
+    border: none;
+  }
+  html, body {
+    overflow: hidden;      /* Ensure no scrollbars */
+    height: 100%;          /* Force content to fit in height */
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+

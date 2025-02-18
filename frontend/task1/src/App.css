@@ -1,0 +1,44 @@
+.l1{
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.a{
+  
+    border-collapse: collapse;
+    width: 450px !important;
+}
+
+@media screen and (max-width : 500px){
+   .a{
+    width: 350px !important;
+   }
+}
+@media screen and (max-width : 350px){
+    .a{
+     width: 300px !important;
+    }
+ }
+
+ /* @media screen and (max-width:1450px) {
+    .z{
+        margin-top: 10px;
+    }
+ } */
+
+.Table{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 12%; */
+}
+.b{
+    text-align: center;
+}
+
+/* .outline{
+    width: 100%;
+    height: 97svh;
+    border: 1px solid black;
+} */

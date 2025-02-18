@@ -1,0 +1,361 @@
+.main{
+    height: 100svh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.MainHead{
+    height: fit-content;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.matter{
+    height: fit-content;
+    width: 50%;
+    background-color: #F6F6F6;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.matter h1{
+    font-weight: bold;
+    color: red;
+    font-size: 35px;
+}
+.matter p{
+    font-size: 18px;
+    color: gray;
+    line-height: 25px;
+}
+.heading1{
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+.content1{
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.video{
+    height: 100%;
+    width: 60%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.youtubelink{
+     width: 650px;
+     height:350px;
+}
+.videoMatter{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(166, 158, 159); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoMatter p{
+    height: fit-content;
+    width: 80%;
+    /* background-color: pink; */
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: rgb(108, 106, 106);
+}
+.heading2{
+    height: fit-content;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+.content2{
+    height: fit-content;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-evenly;
+}
+.card1{
+    height: 96%;
+    width: 28%;
+    background-color: white;
+}
+.img1{
+    height: 45%;
+    background-color: white;
+}
+.img1 img{
+    width: 100%;
+    height: 100%;
+}
+.cnt1{
+    height: 50%;
+    background-color: white;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cnt1 h3{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: start;
+    color: black;
+}
+.cnt1 p{
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: gray;
+    line-height: 25px;
+    font-size: 17px;
+    text-align:center;
+}
+.anchortag1{
+    font-weight:bold;
+    color: #b30547;
+    display: flex;
+    gap: 20px;
+    text-align: start;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: rgb(255, 255, 255);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 650px;
+    perspective: 1000px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background-color: rgb(250, 226, 226);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+}
+
+.flip-card-back {
+    background-color: rgb(250, 226, 226);
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #333;
+    height: fit-content;
+}
+.testheading{
+    height: fit-content;
+    width: 100%;
+    /* background-color: blueviolet; */
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    color: red;
+}
+.testimg{
+    height: 30%;
+    /* background-color: aliceblue; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimg img{
+    height: 100%;
+    width: 50%;
+}
+.testmatter{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.testmatter p{
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: gray;
+    line-height: 25px;
+    font-size: 17px;
+} 
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {  
+.matter{
+    width: 100%;
+}
+.matter h1{
+    font-size: 28px;
+}
+.matter p{
+    font-size: 14px;
+}
+.heading1{
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+.content1{
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.video{
+    height: fit-content;
+    width: 100%;
+}
+.youtubelink{
+     width:fit-content;
+     height:150px;
+}
+.videoMatter{
+    height: 50%;
+    width: 100%;
+}
+.videoMatter p{
+    height: fit-content;
+    width: 100%;
+    font-size: 16px;
+}
+.heading2{
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+.content2{
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card1{
+    height: 96%;
+    width: 100%;
+    padding: 10px;
+}
+.cnt1 p{
+    font-size: 16px;
+}
+}
+
+
+@media only screen and (min-width:760px) and (max-width:1024px){
+    .matter{
+        width: 80%;
+    }
+    .matter h1{
+        font-size: 35px;
+    }
+    .matter p{
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    } 
+    .heading1{
+        font-size: 35px;
+        text-align: center;
+        padding: 20px;
+    }
+    .content1{
+        height: fit-content;
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .video{
+        height: fit-content;
+        width: 100%;
+    }
+    .youtubelink{
+         width: 450px;
+         height:250px;
+    }
+    .videoMatter{
+        height: 50%;
+        width: 100%;
+    }
+    .videoMatter p{
+        height: fit-content;
+        width: 90%;
+        font-size: 18px;
+    }
+    .heading2{
+        font-size: 35px;
+        text-align: center;
+        padding: 20px;
+    }
+    .content2{
+        padding: 40px;
+        height: fit-content;
+        display: flex;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+    .card1{
+        height: fit-content;
+        width: 80%;
+        padding: 30px;
+    }
+    .cnt1 p{
+        font-size: 20px;
+    }
+    .cnt1 h3{
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: black;
+        font-size: x-large;
+    }
+}
