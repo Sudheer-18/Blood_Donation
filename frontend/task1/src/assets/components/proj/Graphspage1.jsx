@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaMale, FaFemale, FaTint, FaUserGraduate, FaUserTie, FaUsers } from 'react-icons/fa';
 import './Graph.css';
 
-import NumberTicker  from "../NumberTicker.jsx"; // Adjust path accordingly
+import {NumberTicker}  from "../NumberTicker"; // Adjust path accordingly
 import '../mui.css';
 import BarChart0 from "../../../Chart10";
 import BarChart9 from "../../../Chart9";
